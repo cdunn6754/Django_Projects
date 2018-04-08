@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+
+{% block body_block %}
+    <h1>Welcome to index with extensions</h1>
+
+    <h1>
+      {{text|cut2:'bud'}}
+      <br>
+      {{number|add:"350"}}
+    </h1>
+{% endblock %}
